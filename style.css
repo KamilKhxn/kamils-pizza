@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: url("images/pizza.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.design{
+    background-color: black;
+    opacity: 0.8;
+}
+.header{
+    padding: 25px 0;
+    height: 150px;
+    /* width: auto; */
+    /* maybe remove the flex display  */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+#title{
+    color:white;
+    font-size: 40px;
+    text-align: center;
+}
+.display{
+    width: 650px;
+    height: 500px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* border: 2px solid white;  */
+    /* margin-left: 400px; */
+    /* margin-top: 150px;  */
+}
+.container{
+    height: 675px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    /* border: 2px solid white; */
+    
+}
