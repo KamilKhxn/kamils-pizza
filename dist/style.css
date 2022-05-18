@@ -12,7 +12,7 @@ body{
 }
 .design{
     background-color: black;
-    opacity: 0.85;
+    opacity: 0.80;
 }
 .header{
     padding: 25px 0;
@@ -25,16 +25,18 @@ body{
 }
 #title{
     color:white;
-    font-size: 40px;
+    font-size: 45px;
     text-align: center;
 }
 .display{
     width: 650px;
-    height: 500px;
+    height: 500px; /*1110*/
     color: white;
     text-align: center;
     font-size: 22px;
-    border: red;
+    /* margin-top: 500px; */
+    /* float:left; */
+    /* border: red; */
     /* display: flex; */
     /* justify-content: center;  */
     /* align-items: center; */
@@ -44,10 +46,11 @@ body{
     /* margin-top: 150px;  */
 }
 .container{
-    height: 675px;
+    height: 675px; /*1200*/
     display: flex;
     justify-content: center; 
-    align-items: center;
+    margin-top: 90px;
+    /* align-items: center; */
     /* border: 2px solid white; */
     
 }
@@ -101,3 +104,58 @@ body{
     background-color: #04AA6D;
     color: white;
   }
+
+  #map-pic{
+    width:auto;
+    height:auto;
+    max-width: 475px; 
+    max-height: 475px;
+    /* border-radius: 50%;/ */
+    /* opacity: 10; */
+}
+#menu-items{
+    float:left;
+    width: 270px;
+    height: 320px;
+    /* background-color: black; */
+    /* border: solid red; */
+    /* align-items: center; */
+    /* display:flex; */
+    /* justify-content: center; */
+    margin: 25px 25px;
+    opacity: 0.75;
+    background-color: black;
+}
+
+.menu-container{
+    height: 1200px; /*1200*/
+    display: flex;
+    justify-content: center; 
+    margin-top: 90px;
+}
+
+.menu-display{
+
+        width: 650px;
+        height: 1110px; /*1110*/
+        color: white;
+        text-align: center;
+        font-size: 27px;
+        opacity: 0.97;
+        background-color: rgba(0, 0, 0, 0.6);
+        border:solid 0.5px black;
+}
+
+.item-description{
+    margin-top:20px;
+    margin-left:35px;
+    font-size: 18px;
+    width:200px;
+}
+#pizza-pic{
+    /* width:auto; */
+    /* height:auto; */
+    max-width: 200px;
+    margin-top: 30px;
+    /* max-height: 325px; */
+}
