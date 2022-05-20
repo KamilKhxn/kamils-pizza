@@ -1,51 +1,34 @@
-// adding html code to homepage
-// main homepage
-// import other modules for other tabs
-
-import homepage from "./home.js";
+import homePage from "./home.js";
 import contactPage from "./contact.js";
 import menuPage from "./menu.js";
+import { header } from "./outline.js";
 
+let element = document.getElementById("content");
 
 const main = () => {
-    homepage();
-    // while (true) {
-    checkTabPressed('true');
-    // }
-}
+    header();
+    homePage();
 
-const removeData = () => {
-    let element = document.getElementById("content");
-    while (element.firstChild) {
-        element.removeChild(element.firstChild);
-    }
-}
-
-const checkTabPressed = () => {
-
-
-    document.querySelectorAll('a').forEach(item => {
-        item.addEventListener('click', (bool) => {
-            let tabPressed = item.innerHTML;
-            // console.log(tabPressed + 'index.js');
-
-            if (tabPressed === 'Menu') {
-                removeData();
+    document.querySelectorAll('button').forEach(item => {
+        item.addEventListener('click', event => {
+            if (item.innerHTML === 'Menu') {
+                remove();
                 menuPage();
-                // setTimeout(removeData(), 10000);
-
-                console.log('menu pressed');
             }
-
-            if (tabPressed === 'Contact') {
-                removeData();
+            if (item.innerHTML === 'Contact') {
+                remove();
                 contactPage();
-                console.log('contact pressed');
             }
-
-
+            if (item.innerHTML === 'Home') {
+                remove();
+                homePage();
+            }
         })
     })
+}
+
+const remove = () => {
+    element.removeChild(element.lastChild);
 }
 
 main();

@@ -1,7 +1,7 @@
-import * as outline from './outline.js';
+// import * as outline from './outline.js';
 
 const menuPage = () => {
-    outline.header('menu', 'Mamas Pizza');
+    // outline.header('menu', 'Mamas Pizza');
     // outline.mainDisplay('☎️ 123 456 7890', 'images/cn-map.png', 'map-pic', '290 Bremner Blvd, Toronto');
     menuLayout();
 }
@@ -71,6 +71,7 @@ const menuLayout = () => {
         menuItemsArr[i].appendChild(itemTitle);
         menuItemsArr[i].appendChild(itemDescription);
     }
+    // return container;
 };
 
 export default menuPage;
