@@ -86,7 +86,7 @@ const createFooter = () => {
 
     const anchorFooter = document.createElement('a');
     anchorFooter.innerHTML = 'Kamilkhxn';
-    anchorFooter.href = 'https://github.com/KamilKhxn/Calculator';
+    anchorFooter.href = 'https://github.com/KamilKhxn/kamils-pizza';
     anchorFooter.target = '_blank';
 
     appendFunc(footer, anchorFooter);
