@@ -1,12 +1,13 @@
 import homePage from "./home.js";
 import contactPage from "./contact.js";
 import menuPage from "./menu.js";
-import { header } from "./outline.js";
+import { footer, header } from "./outline.js";
 
 let element = document.getElementById("content");
 
 const main = () => {
     header();
+    footer();
     homePage();
 
     document.querySelectorAll('button').forEach(item => {
