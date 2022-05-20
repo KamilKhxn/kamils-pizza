@@ -2,65 +2,54 @@
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
-    
 }
+
 body{
     background-image: url("images/background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+
 .design{
     background-color: rgba(0, 0, 0, 0.9);
     opacity: 0.80;
     border: solid 1px rgba(0, 0, 0, 1);
 }
+
 .header{
     padding: 40px 0;
     height: 250px;
-    /* width: auto; */
-    /* maybe remove the flex display  */
-    /* display: flex; */
     justify-content: center; 
-    /* align-items: center; */
 }
+
 #title{
     color:white;
     font-size: 70px;
     text-align: center;
     font-family: 'Tangerine', cursive;
 }
+
 .display{
     width: 650px;
     height: 500px; /*1110*/
     color: white;
     text-align: center;
     font-size: 22px;
-    /* margin-top: 500px; */
-    /* float:left; */
-    /* border: red; */
-    /* display: flex; */
-    /* justify-content: center;  */
-    /* align-items: center; */
-    /* vertical-align: middle; */
-    /* border: 2px solid white;  */
-    /* margin-left: 400px; */
-    /* margin-top: 150px;  */
 }
+
 .container{
     height: 675px; /*1200*/
     display: flex;
     justify-content: center; 
     margin-top: 90px;
-    /* align-items: center; */
-    /* border: 2px solid white; */
-    
 }
+
 .upper{
     padding-top: 30px;
     padding-bottom: 30px;
-    /* height: 30px; */
 }
+
 #chef-pic{
     width:auto;
     height:auto;
@@ -69,14 +58,11 @@ body{
     border-radius: 50%;
     opacity: 10;
 }
+
 .lower{
     padding-top: 30px;
-    /* height: 30px; */
-    /* padding-right: 200px; */
 }
 
-
-/* Add a black background color to the top navigation */
 .topnav {
     /* background-color: #333; */
     margin-top: 20px;
@@ -84,24 +70,17 @@ body{
     text-align: center;
   }
   
-
-  #map-pic{
+#map-pic{
     width:auto;
     height:auto;
     max-width: 475px; 
     max-height: 475px;
-    /* border-radius: 50%;/ */
-    /* opacity: 10; */
 }
+
 #menu-items{
     float:left;
     width: 270px;
     height: 320px;
-    /* background-color: black; */
-    /* border: solid red; */
-    /* align-items: center; */
-    /* display:flex; */
-    /* justify-content: center; */
     margin: 25px 25px;
     opacity: 0.75;
     background-color: black;
@@ -115,15 +94,14 @@ body{
 }
 
 .menu-display{
-
-        width: 650px;
-        height: 1110px; /*1110*/
-        color: white;
-        text-align: center;
-        font-size: 27px;
-        opacity: 0.97;
-        background-color: rgba(0, 0, 0, 0.6);
-        border:solid 0.5px black;
+    width: 650px;
+    height: 1110px; /*1110*/
+    color: white;
+    text-align: center;
+    font-size: 27px;
+    opacity: 0.97;
+    background-color: rgba(0, 0, 0, 0.6);
+    border:solid 0.5px black;
 }
 
 .item-description{
@@ -132,24 +110,32 @@ body{
     font-size: 18px;
     width:200px;
 }
+
 #pizza-pic{
-    /* width:auto; */
-    /* height:auto; */
     max-width: 200px;
     margin-top: 30px;
-    /* max-height: 325px; */
 }
+
 button{
     background-color: rgba(0, 0, 0, 0.9);
 color: white;
 padding: 0px 10px;
 border: none;
-/* transition: transform 0.3s; */
 background: none;
 font-size: 17px;
-
 }
+
 button:hover{
     color:red;
-
 }
+
+.footer{    
+    padding-top: 20px;
+    color:white;
+    margin-top:auto;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+    padding-bottom: 3%;
+    font-size: 18px;
+} 
