@@ -132,4 +132,4 @@ const footer = () => {
     appendFunc(document.body, footer)
 }
 
-export { header, mainDisplay, footer };
+export { header, mainDisplay, footer, appendFunc };

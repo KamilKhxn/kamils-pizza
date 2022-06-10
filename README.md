@@ -1,7 +1,7 @@
 # Papas Pizza
 ![Calculator](dist/images/landing.png)
 
-A website showing information about various pizza options, the location and contact info for Papas Pizza. It uses webpack to dynmically render the contents of the site, without using HTML. Check out the [Live Demo](https://kamilkhxn.github.io/kamils-pizza/).
+A website showing information about various pizza options, the location and contact info for Papas Pizza. It uses webpack to dynmically render the contents of the site, without using HTML, while minifying and uglifying the js file. Check out the [Live Demo]().
 
 ## What I Learned
 * Using package.json files

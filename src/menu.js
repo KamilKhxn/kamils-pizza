@@ -1,4 +1,4 @@
-// import * as outline from './outline.js';
+import { appendFunc } from "./outline.js";
 
 const menuPage = () => {
     // outline.header('menu', 'Mamas Pizza');
@@ -9,13 +9,13 @@ const menuLayout = () => {
     const content = document.getElementById('content');
     const container = document.createElement('div');
     container.classList.add('menu-container');
-    content.appendChild(container);
+    appendFunc(content, container);
 
-    // // display element which has the opacity => display is in container
+    // display element which has the opacity => display is in container
     const display = document.createElement('div');
     display.classList.add('menu-display');
     display.classList.add('design');
-    container.appendChild(display);
+    appendFunc(container, display);
 
     const item1 = document.createElement('div');
     const item2 = document.createElement('div');
@@ -24,24 +24,12 @@ const menuLayout = () => {
     const item5 = document.createElement('div');
     const item6 = document.createElement('div');
 
-    let menuItemsArr = []
-
-    menuItemsArr.push(item1);
-    menuItemsArr.push(item2);
-    menuItemsArr.push(item3);
-    menuItemsArr.push(item4);
-    menuItemsArr.push(item5);
-    menuItemsArr.push(item6);
-
+    let menuItemsArr = [item1, item2, item3, item4, item5, item6]
 
     for (let i = 0; i < menuItemsArr.length; i++) {
+        // adding id for each menu block
         menuItemsArr[i].setAttribute("id", 'menu-items');
 
-        display.appendChild(menuItemsArr[i]);
-
-    }
-
-    for (let i = 0; i < menuItemsArr.length; i++) {
         const image = document.createElement('img');
         const itemTitle = document.createElement('div');
         const itemDescription = document.createElement('div');
@@ -64,10 +52,10 @@ const menuLayout = () => {
         itemDescription.innerHTML = desciptionsArr[i];
         itemDescription.classList.add('item-description');
 
-
-        menuItemsArr[i].appendChild(image);
-        menuItemsArr[i].appendChild(itemTitle);
-        menuItemsArr[i].appendChild(itemDescription);
+        appendFunc(display, menuItemsArr[i]);
+        appendFunc(menuItemsArr[i], image);
+        appendFunc(menuItemsArr[i], itemTitle);
+        appendFunc(menuItemsArr[i], itemDescription);
     }
 };
 
