@@ -82,14 +82,10 @@ const createFooter = () => {
     const footer = document.createElement('div');
     footer.classList.add('footer');
     footer.classList.add('design');
-    footer.innerHTML = 'Created by ';
+    footer.innerHTML = 'Created by Kamilkhxn';
 
-    const anchorFooter = document.createElement('a');
-    anchorFooter.innerHTML = 'Kamilkhxn';
-    anchorFooter.href = 'https://github.com/KamilKhxn/kamils-pizza';
-    anchorFooter.target = '_blank';
 
-    appendFunc(footer, anchorFooter);
+    // appendFunc(footer, anchorFooter);
 
     return footer;
 }
